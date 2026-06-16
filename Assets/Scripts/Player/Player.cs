@@ -56,8 +56,8 @@ public class Player : Entity
 
         idleState = new PlayerIdleState(this, stateMachine, "Idle");
         moveState = new PlayerMoveState(this, stateMachine, "Move");
-        fallState = new PlayerFallState(this, stateMachine, "Fall");
-        doubleFallState = new PlayerDoubleFallState(this, stateMachine, "DoubleFall");
+        fallState = new PlayerFallState(this, stateMachine, "Jump");
+        doubleFallState = new PlayerDoubleFallState(this, stateMachine, "DoubleJump");
         jumpState = new PlayerJumpState(this, stateMachine, "Jump");
         doubleJumpState = new PlayerDoubleJumpState(this, stateMachine, "DoubleJump");
         dashState = new PlayerDashState(this, stateMachine, "Dash");
